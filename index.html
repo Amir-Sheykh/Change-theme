@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смена цвета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/497/497273.png" alt="">
+        <div class="card_content">
+            <h1>
+                Шахматы
+            </h1>
+            <p>
+                Раньше шахматы дарили на свадьбу в Персии, показывая дружбу молодожёнов и их вражду лишь на шахматной доске.
+            </p>
+            <button class="btn">
+                Смена цвета
+            </button>
+        </div>
+    </div>
+    <script>
+        let btn = document.querySelector(".btn");
+        btn.addEventListener("click", function(){
+            document.body.classList.toggle("dark")
+        })
+    </script>
+</body>
+</html>
